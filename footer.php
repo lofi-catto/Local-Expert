@@ -12,9 +12,9 @@ if (!defined('ABSPATH')) {
 ?>
 <footer class="site-footer">
 	<div class="random">
-		<img src="https://source.unsplash.com/daily" />
-		<img src="https://source.unsplash.com/weekly?water" />
-		<img src="https://source.unsplash.com/weekly?building" />
+		<img src="https://source.unsplash.com/featured?field" />
+		<img src="https://source.unsplash.com/featured?water" />
+		<img src="https://source.unsplash.com/featured?farm" />
 		<img src="https://source.unsplash.com/featured?nature" />
 		<img src="https://source.unsplash.com/featured?architect" />
 	</div>

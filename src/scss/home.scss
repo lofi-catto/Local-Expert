@@ -5,90 +5,150 @@
     padding: 0;
   }
 
-  .container {
-    box-sizing: border-box;
-    overflow: auto;
+  .ban {
+    position: relative;
+    width: 100%;
 
-    .ban {
-      position: relative;
+    .home-photo {
       width: 100%;
+      object-fit: cover;
+      height: 400px;
+    }
 
-      .home-photo {
+    .credit {
+      display: block;
+      color: white;
+      right: 20px;
+      position: absolute;
+      top: 0;
+    }
+
+    .main-search {
+      background-color: white;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+      position: relative;
+      z-index: 100;
+      width: calc(66.66667% - 66.66667px);
+      margin: -30px auto 0 auto;
+    }
+
+    .full {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      padding: 6px;
+      border-bottom: 2px solid #dbdbdb;
+
+      & > div {
+        flex: 1;
+      }
+
+      input {
+        outline: none !important;
+        border: none;
         width: 100%;
-        object-fit: cover;
-        height: 400px;
-      }
-
-      .credit {
-        display: block;
-        color: white;
-        right: 20px;
-        position: absolute;
-        top: 0;
-      }
-
-      .main-search {
-        background-color: white;
-        box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
-        position: relative;
-        z-index: 100;
-        width: calc(66.66667% - 66.66667px);
-        margin: -30px auto 0 auto;
-      }
-
-      .full {
         box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        padding: 6px;
-        border-bottom: 2px solid #dbdbdb;
+        height: 100%;
+        padding: 8px;
+        border: 0 !important;
+      }
 
-        & > div {
-          flex: 1;
+      .btn-link {
+        padding: 12px 24px;
+        border-radius: 1px;
+        text-align: center;
+        display: inline-block;
+        color: #006969;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: none;
+        background-color: rgba(0, 105, 105, 0.25);
+        color: #4d966f;
+      }
+    }
+  }
+
+  .intro {
+    margin-top: -60px;
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: #49a27c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      margin-top: 30px;
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .desc {
+    margin: 5rem 0;
+    display: flex;
+    width: 100%;
+
+    .left {
+      width: 50%;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .divider {
+        width: 150px;
+        height: 32px;
+        border-top: 2px solid #49a27c;
+        display: block;
+        transform: rotate(90deg);
+        position: absolute;
+
+        &.top {
+          top: 25%;
         }
 
-        input {
-          outline: none !important;
-          border: none;
-          width: 100%;
-          box-sizing: border-box;
-          height: 100%;
-          padding: 8px;
-          border: 0 !important;
-        }
-
-        .btn-link {
-          padding: 12px 24px;
-          border-radius: 1px;
-          text-align: center;
-          display: inline-block;
-          color: #006969;
-          font-size: 14px;
-          line-height: 1.5;
-          font-weight: 700;
-          text-decoration: none;
-          transition: all 0.2s;
-          border: none;
-          background-color: rgba(0, 105, 105, 0.25);
-          color: #4d966f;
+        &.bottom {
+          bottom: 25%;
         }
       }
     }
 
-    .intro {
-      margin-top: -60px;
-      padding: 10px;
-      height: 200px;
-      width: 100%;
-      background-color: #49a27c;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .right {
+      width: 50%;
+      position: relative;
 
-      h3 {
-        margin-top: 30px;
-        color: white;
-        font-size: 20px;
+      img {
+        object-fit: cover;
+        max-height: 350px;
+      }
+
+      .first {
+        top: 20px;
+        left: -80px;
+        position: absolute;
+        width: 20vw;
+      }
+
+      .second {
+        right: 100px;
+        position: absolute;
+        width: 30vw;
+      }
+
+      .third {
+        position: absolute;
+        width: 30vw;
+        bottom: 20px;
       }
     }
   }

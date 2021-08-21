@@ -10,7 +10,7 @@ while (have_posts()) : the_post();
 ?>
 <!-- main body -->
 <main <?php post_class('site-main'); ?> id="<?php echo get_post_field('post_name', get_post()); ?>" role="main">
-    <div class="container">
+    <div class="">
         <?php the_content(); ?>
 
         <?php if (have_rows('modules')) : ?>
@@ -33,6 +33,19 @@ while (have_posts()) : the_post();
         </div>
         <div class="intro">
             <h3>Your guide to visiting, exploring and living in Tasmania</h3>
+        </div>
+
+        <div class="desc">
+            <div class="left">
+                <span class="divider top"></span>
+                <h2>Let the locals guide you</h2>
+                <span class="divider bottom"></span>
+            </div>
+            <div class="right">
+                <img class="first" src="https://source.unsplash.com/featured?tasmania" />
+                <img class="second" src="https://source.unsplash.com/featured?wine" />
+                <img class="third" src="https://source.unsplash.com/featured?cheese" />
+            </div>
         </div>
 
         <?php elseif (get_row_layout() == 'text') : ?>
