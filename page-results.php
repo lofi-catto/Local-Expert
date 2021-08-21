@@ -24,7 +24,7 @@
                         <span class="m-tag region">East Coast</span>
                     </div>
                 </div>
-                <a class="m-incentive-tile__link" href="<?php echo get_page_link('33') ?>">view
+                <a class="m-incentive-tile__link" href="<?php echo get_page_link('36') ?>">view
                     Maria Island Page</a>
             </div>
 
@@ -42,7 +42,7 @@
                         <span class="m-tag region">East Coast</span>
                     </div>
                 </div>
-                <a class="m-incentive-tile__link" href="<?php echo get_page_link('33') ?>">view
+                <a class="m-incentive-tile__link" href="<?php echo get_page_link('36') ?>">view
                     Mount William Page</a>
             </div>
 
@@ -60,7 +60,7 @@
                         <span class="m-tag region">East Coast</span>
                     </div>
                 </div>
-                <a class="m-incentive-tile__link" href="<?php echo get_page_link('33') ?>">view
+                <a class="m-incentive-tile__link" href="<?php echo get_page_link('36') ?>">view
                     Douglas Apsley Page</a>
             </div>
 
@@ -77,7 +77,7 @@
                         <span class="m-tag region">East Coast</span>
                     </div>
                 </div>
-                <a class="m-incentive-tile__link" href="<?php echo get_page_link('33') ?>">view
+                <a class="m-incentive-tile__link" href="<?php echo get_page_link('36') ?>">view
                     Bay of Fires Page</a>
             </div>
         </div>
