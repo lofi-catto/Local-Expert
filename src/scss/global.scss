@@ -1,0 +1,139 @@
+// @font-face {
+//   font-family: "Gotham-Book";
+//   src: url("../fonts/Gotham-Book.otf") format("opentype");
+//   font-style: normal;
+// }
+
+@import url(../fonts/Montserrat.css);
+
+p,
+h1,
+h2,
+h3
+h4,
+h5,
+h6,
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  margin: 0;
+}
+
+body {
+  font-weight: 300;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none !important;
+  color: $black;
+
+  &:hover {
+    color: $black-hover;
+  }
+}
+
+body * {
+  word-wrap: normal !important;
+}
+
+@mixin alt {
+  @include font-size(0.875rem !important);
+  @include rfs(1.125rem !important, line-height);
+  font-weight: $normal !important;
+  letter-spacing: 0.14px !important;
+  text-transform: uppercase;
+}
+
+.alt {
+  @include alt;
+}
+
+// Customise font size
+h1,
+.h1 {
+  @include font-size(3.5rem);
+  color: $black;
+  font-weight: 600;
+  @include rfs(6.8rem, line-height);
+}
+
+h2,
+.h2 {
+  @include font-size(3.125rem);
+  color: $black;
+  font-weight: 600;
+  @include rfs(3.82rem, line-height);
+}
+
+h3,
+.h3 {
+  @include font-size(1.5rem);
+  color: $black;
+  font-weight: $medium;
+  @include rfs(3.25rem, line-height);
+}
+
+h4,
+.h4 {
+  @include font-size(1.25rem);
+  color: $black;
+  font-weight: $medium;
+  @include rfs(1.5rem, line-height);
+}
+
+p,
+.p {
+  @include font-size(1rem);
+  color: $text-color;
+  font-weight: $normal;
+  @include rfs(1.56rem, line-height);
+}
+
+@mixin button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white !important;
+  color: $black !important;
+  border: 1px solid $black !important;
+  font-weight: $normal;
+
+  &:hover {
+    background-color: black !important;
+    color: white !important;
+  }
+}
+
+button,
+input[type="submit"] {
+  @include button;
+}
+
+body {
+  background-color: $white;
+}
+
+
+#custom-page {
+  .container {
+    display: flex;
+    padding: 3.5rem 0;
+  }
+}
+
+.background-primary {
+  background-color: $background-primary;
+}
+
+.background-secondary {
+  background-color: $background-secondary;
+}
+
+.button-grey {
+  &:hover {
+    filter: contrast(0.6);
+  }
+}
+
+strong {
+  font-weight: 700 !important;
+}

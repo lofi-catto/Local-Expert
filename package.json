@@ -1,0 +1,48 @@
+{
+  "name": "republic-chambers",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --mode development --watch"
+  },
+  "author": "",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "5.0.0-beta1",
+    "jquery": "^3.6.0",
+    "jump.js": "^1.0.2",
+    "lodash": "^4.17.20",
+    "simplelightbox": "^2.7.2",
+    "tiny-slider": "^2.9.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@glidejs/glide": "^3.4.1",
+    "autoprefixer": "^9.7.6",
+    "axios": "^0.19.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.4.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "scss-loader": "0.0.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "keywords": [],
+  "description": ""
+}
