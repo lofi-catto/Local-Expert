@@ -11,49 +11,50 @@ $medium: 500;
 $bold: 700;
 $bolder: 900;
 
-$text-color: #393939;
-$text-gray: #7f8284;
-$main-background: #38414B;
+$text-color: #222038;
+$text-gray: #222038;
+$main-background: white;
 $darkgreen: #44492d;
-$dark-blue: #2A2C38;
-$blue: #3B7EFF;
+$dark-blue: #2a2c38;
+$blue: #3b7eff;
 $orange: #b1945f;
 $lightgreen: #00a888;
 $black: #393939;
 $white: white;
 $green: #617040;
-$grey: #F8F7F2;
+$grey: #f8f7f2;
 $yellow: #e7dfc1;
 $black-hover: rgba(0, 0, 0, 0.5);
 
 $background-primary: #fbfaf6;
-$background-secondary: #F5F5F5;
+$background-secondary: #f5f5f5;
 
 $footer-background-color: $dark-blue;
 $header-light-background: $white;
 $header-dark-background: $dark-blue;
 
+@mixin make-max-width-container(
+  $max-widths: $container-max-widths,
+  $breakpoints: $grid-breakpoints
+) {
+  @include make-container();
 
-@mixin make-max-width-container($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-    @include make-container();
-
-    @each $breakpoint,
-    $container-max-width in $max-widths {
-        @include media-breakpoint-up($breakpoint, $breakpoints) {
-            max-width: $container-max-width;
-        }
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
     }
+  }
 }
 
 @mixin image-hover {
-    &:hover {
-        filter: contrast(0.3);
-        transform: scale(1.1);
-    }
+  &:hover {
+    filter: contrast(0.3);
+    transform: scale(1.1);
+  }
 }
 
 @mixin text-hover {
-    &:hover {
-        filter: contrast(0.3);
-    }
+  &:hover {
+    filter: contrast(0.3);
+  }
 }

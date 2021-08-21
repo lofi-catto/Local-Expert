@@ -1,13 +1,13 @@
 .site-header {
   max-width: 100vw;
   @include padding-top(2rem);
-  @include padding-bottom(2rem);
+  // @include padding-bottom(2rem);
   background-color: $main-background;
   z-index: 99;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 122px;
+  // height: 122px;
 
   .header-container {
     height: 100%;
@@ -69,26 +69,15 @@
           margin-left: auto;
         }
 
-        img {
-          // @include image-hover();
-          height: 50px;
-          width: auto;
+        h1 {
+          font-size: 26px;
 
-          @include media-breakpoint-down(xl) {
-            height: 40px;
-          }
-
-          @include media-breakpoint-down(md) {
-            height: 30px;
-          }
-
-          @include media-breakpoint-down(sm) {
-            width: 250px;
+          span {
+            font-weight: 300;
           }
         }
       }
     }
-
 
     .navbar-collapse {
       width: 60% !important;
@@ -105,7 +94,6 @@
       @include media-breakpoint-down(md) {
         top: 59px;
       }
-
 
       @include media-breakpoint-up(lg) {
         display: flex;
@@ -136,7 +124,7 @@
         }
 
         .nav-link {
-          color: $white;
+          color: $text-color;
           @include rfs(1.2rem, font-size);
           max-width: max-content;
           padding-bottom: 2px;
@@ -150,10 +138,10 @@
   }
 
   .active {
-    border-bottom: 3px solid $grey;
+    border-bottom: 3px solid #49a27c;
   }
 
-  .dropdown-menu  {
+  .dropdown-menu {
     background-color: $main-background;
     border: none;
     border-radius: 0;
@@ -177,7 +165,8 @@
       padding: 1rem 1rem;
     }
 
-    .dropdown-item:hover, .dropdown-item:focus {
+    .dropdown-item:hover,
+    .dropdown-item:focus {
       color: black;
     }
   }

@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() . '/src/favicon/favicon.ico' ?>">
 	<?php if (is_front_page()) : ?>
-		<meta property="og:image" content="<?php echo get_template_directory_uri() . '/src/img/screenshot.png' ?>" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() . '/src/img/screenshot.png' ?>" />
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
@@ -46,10 +46,13 @@ if (!defined('ABSPATH')) {
 		<div class="header-container container">
 			<nav class="navbar navbar-expand-lg navbar-light row">
 				<div class="site-branding">
-					<a href="<?php echo home_url() ?>"><img src="<?php echo get_template_directory_uri() ?><?php echo $logo ?>" alt=""></a>
+					<a href="<?php echo home_url() ?>">
+						<h1>Local<span>Expert</span></h1>
+					</a>
 				</div>
 				<div class='navbar-mobile row col-2 col-sm-2 d-lg-none'>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<!-- <div class="navbar-cart navbar-cart-mobile d-flex d-sm-flex d-lg-none">
@@ -63,13 +66,15 @@ if (!defined('ABSPATH')) {
 
 				if ($navigation) :
 				?>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<?php foreach ($navigation as $item) : ?>
-								<li class="nav-item <?php echo $item['children'] ? 'dropdown' : '' ?>">
-									<a class="nav-link <?php echo $item['children'] ? 'dropdown-toggle' : '';
-														echo ($current_url == trim($item['url'], '/')) ? 'active' : '' ?>" <?php echo $item['children'] ? ' id="nav-' . $item['title'] . '" role="button" data-bs-toggle="dropdown" aria-expanded="false"' : 'aria-current="page"' ?> href="<?php echo $item['url'] ?>"><?php echo $item['title'] ?></a>
-									<?php
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<?php foreach ($navigation as $item) : ?>
+						<li class="nav-item <?php echo $item['children'] ? 'dropdown' : '' ?>">
+							<a class="nav-link <?php echo $item['children'] ? 'dropdown-toggle' : '';
+														echo ($current_url == trim($item['url'], '/')) ? 'active' : '' ?>"
+								<?php echo $item['children'] ? ' id="nav-' . $item['title'] . '" role="button" data-bs-toggle="dropdown" aria-expanded="false"' : 'aria-current="page"' ?>
+								href="<?php echo $item['url'] ?>"><?php echo $item['title'] ?></a>
+							<?php
 									$navChild = '';
 									if ($item['children']) :
 										$navChild = '
@@ -80,11 +85,11 @@ if (!defined('ABSPATH')) {
 										$navChild .= '</ul>';
 									endif;
 									?>
-									<?php echo $item['children'] ? $navChild : '' ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					</div>
+							<?php echo $item['children'] ? $navChild : '' ?>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
 				<?php endif; ?>
 			</nav>
 		</div>
