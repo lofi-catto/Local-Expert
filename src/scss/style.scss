@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@import "~normalize.css/normalize.css";
+
+/** Import Bootstrap */
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables.scss";
+@import "global.scss";
+@import "common.scss";
+
+@import "single.scss";
+@import "insights.scss";
+@import "barrister.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "home.scss";
+@import "results.scss";
+@import "suggestions.scss";

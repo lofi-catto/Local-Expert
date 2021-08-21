@@ -1,0 +1,119 @@
+.site-footer {
+  @include padding-top(2rem);
+  @include padding-bottom(2rem);
+  width: 100%;
+  background-color: $main-background;
+  position: relative;
+
+  span,
+  a,
+  p {
+    color: #222038;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+
+  a {
+    @include text-hover();
+  }
+
+  .random {
+    display: flex;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      width: 20%;
+      max-height: 239.891px;
+    }
+  }
+
+  .footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @include padding-top(5rem);
+    @include padding-bottom(5rem);
+    // justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & > div {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 8rem;
+    }
+
+    .subscribe {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 700;
+
+      input {
+        outline: none !important;
+        width: 250px;
+        border: none !important;
+        border-bottom: 1px solid #000 !important;
+        border-radius: 0 !important;
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 20px;
+      }
+
+      a.button {
+        width: 150px;
+        padding: 12px 32px;
+        border: 1px solid #006969 !important;
+        border-radius: 1px;
+        text-align: center;
+        display: inline-block;
+        color: #006969;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    p {
+      text-align: left;
+      font-family: "calibre";
+      font-size: 14px;
+      line-height: 17px;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+    }
+  }
+
+  .author {
+    text-align: right;
+
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+
+    p {
+      font-size: 12px;
+      color: #222038;
+      right: 0;
+      bottom: 0;
+
+      a {
+        font-size: inherit;
+        color: inherit;
+      }
+    }
+  }
+}

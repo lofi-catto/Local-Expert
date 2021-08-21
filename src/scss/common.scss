@@ -1,0 +1,60 @@
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+input.input-text.qty {
+    width: 5em !important;
+}
+
+.checkout-button {
+    @include button;
+}
+
+.site-main {
+    min-height: 50vh;
+    margin-top: 122px;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 60px;
+    }
+}
+
+.footer-container,
+.container {
+    @include make-max-width-container();
+}
+
+input:not([type='submit']):not([type="checkbox"]),
+textarea,
+select {
+    width: 100%;
+    border-radius: 10px !important;
+    border: 2px solid #979797 !important;
+    padding: 10px;
+}
+
+input,
+select {
+    height: 50px;
+}
+
+body * {
+    transition: all 0.2s ease-in;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a {
+    outline: none;
+}
