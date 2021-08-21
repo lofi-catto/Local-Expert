@@ -48,8 +48,10 @@
     }
 
     .subscribe {
+      width: 100% !important;
       display: flex;
       flex-direction: column;
+      align-items: center;
       font-weight: 700;
 
       input {

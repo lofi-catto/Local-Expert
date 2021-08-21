@@ -26,7 +26,7 @@ while (have_posts()) : the_post();
                         <input type="text" name="search" id="s" placeholder="Which area are you interested in?"
                             value="">
                     </div>
-                    <a class="btn-link">Search</a>
+                    <a href="<?php echo get_page_link('33') ?>" class="btn-link">Search</a>
                 </div>
             </div>
 
